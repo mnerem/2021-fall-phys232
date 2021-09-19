@@ -7,6 +7,8 @@ Lecture slides hosted here
 - [ODU PHYS 232 Sep 9](PHYS232-09-09.html)
 - [ODU PHYS 232 Sep 14](PHYS232-09-14.html)
 - [ODU PHYS 232 Sep 16](PHYS232-09-16.html)
+- [ODU PHYS 232 Sep 21](PHYS232-09-21.html)
+- [ODU PHYS 232 Sep 23](PHYS232-09-23.html)
 
 <p>
 Slides made using reveal.js.
