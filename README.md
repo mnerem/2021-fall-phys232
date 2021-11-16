@@ -18,6 +18,7 @@ Lecture slides hosted here
 - [ODU PHYS 232 Oct 28](PHYS232-10-28.html)
 - [ODU PHYS 232 Nov 9](PHYS232-11-09.html)
 - [ODU PHYS 232 Nov 11](PHYS232-11-11.html)
+- [ODU PHYS 232 Nov 16](PHYS232-11-16.html)
 
 <p>
 Slides made using reveal.js.
