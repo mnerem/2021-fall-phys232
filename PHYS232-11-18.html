@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.75, maximum-scale=1.0, minimum-scale=.02, user-scalable=yes">
+
+		<title>PHYS 232 Course (Fall 2021)</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="css/custom_v2.css">
+		<link rel="stylesheet" href="dist/theme/openstax.css">
+        <link rel="stylesheet" href="plugin/chalkboard/style.css">
+        <script src="plugin/chalkboard/plugin.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+        <!--<link rel="shortcut icon" type="image/x-icon" href="OS-astro-logo.png" />-->
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">       
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- Title Slide-->
+                <section>
+                    <div class="overl">
+                        <h3>University Physics II</h3>
+                    </div>
+                    <a href="https://en.wikipedia.org/wiki/Alternating_current#/media/File:Types_of_current.svg"
+							target='_blank' alt="Hello there">
+                        <img src='https://upload.wikimedia.org/wikipedia/commons/3/38/Types_of_current.svg'
+							width=600px class="r-frame">
+                    </a>
+                    <div class="overl">
+                    <h5>PHYS 232N: November 18, 2021</h5>
+                    </div>
+                </section>
+                
+                <!--Participation-->    
+				<section>
+					<h4 class="overl">PQ-19 Question 1</h4>
+					<p>
+						Consider a square loop of side length $L$, resistance $R$, 
+						and sitting in a uniform magnetic field pointing out of the page. 
+						The field strength changes for a time $\tau$ and induces a clockwise current $I$.
+					</p>
+					<table>
+						<tr>
+							<td>
+								<ol>
+									<li>Find the induced EMF in the loop.</li>
+									<li>Find the change in $B_\text{ext}$.</li>
+									<li>Did $B_\text{ext}$ increase or decrease?</li>
+								</ol>
+							</td>
+							<td>
+								<img src='figures/PQ-19/Induction-Square-Loop.svg' width=300px>
+							</td>
+						</tr>
+					</table>
+					Givens: $L$=8cm, $R$=0.2Ω, $\tau$=10ms, $I_\text{ind}$=150mA.
+				</section>
+
+				<section>
+					<h4 class="overl">PQ-19 Question 2</h4>
+					<p>
+						The power brick for a laptop charger draws 2.7 A from a US outlet (120 V at 60 Hz).
+						<ol>
+							<li>What is the average current through this laptop?</li>
+							<li>What is the RMS current of this laptop?</li>
+							<li>What is the current amplitude of this laptop?</li>
+						</ol>
+
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/menu/menu.js"></script>
+        <!--Reveal.js scripts-->
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                slideNumber: 'c/t',
+                
+                // Transition style
+                transition: 'convex', // none/fade/slide/convex/concave/zoom
+                
+                // Vertical centering of slides
+                center: true,
+
+                preloadIframes: true,
+
+				chalkboard: {
+				        boardmarkerWidth: 3,
+				        chalkWidth: 3,
+				        chalkEffect: 0.25,
+				        storage: null,
+				        src: null,
+				        readOnly: false,
+				        messageType: 'broadcast',
+				        toggleChalkboardButton: { left: "30px", bottom: "60px", top: "auto", right: "auto" },
+				        toggleNotesButton: { left: "30px", bottom: "90px", top: "auto", right: "auto" },
+				        colorButtons: true,
+				        boardHandle: true,
+				        transition: 800,
+				        theme: "chalkboard",
+				        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+				        grid: { color: 'rgb(50,50,50,0.5)', distance: 40, width: 2},
+				        eraser: { src: path + 'img/eraser.png', radius: 20},
+				        boardmarkers : [
+				                { color: 'rgba(0,0,0,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+				                { color: 'rgba(80,146,220, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+				                { color: 'rgba(220,80,80,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+				                { color: 'rgba(15,170,125,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+				                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+				                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+				                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+				        ],
+				        chalks: [
+				                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+				                { color: 'rgba(80,146,220, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+				                { color: 'rgba(220, 80, 80, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+				                { color: 'rgba(15,170,125,0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+				                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+				                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+				                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+				                ]
+				            },
+
+
+		        math: {
+		            // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+		            config: 'TeX-AMS_HTML-full',
+		            TeX: {
+		                Macros: {
+		                    R: '\\mathbb{R}',
+		                    set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+		                }
+		            }
+		        },
+
+                menu: {
+                    width: 'normal',
+                    numbers: false,
+                    themes: false,
+                    transitions: false,
+     //               custom: [
+   //                     {
+  //                          title: 'Links',
+ //                       },
+//                    ],
+                },
+
+    
+                
+                
+            
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [  RevealMarkdown, 
+                            RevealHighlight, 
+                            RevealNotes,
+                            RevealChalkboard,
+                            RevealMath,
+                            RevealMenu,
+                         ]
+			});
+            
+		</script>
+    
+
+	</body>
+</html>
